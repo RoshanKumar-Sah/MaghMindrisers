@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableTask</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+<!-- without <thead> and <tbody> -->
+
+    <table>
+
+        <tr>
+            <th colspan="2">Name</th>
+            <th rowspan="2">Email</th>
+        </tr>
+
+
+        <tr>
+            <td>First</td>
+            <td>Last</td>
+        </tr>
+        <tr>
+            <td>Shyam</td>
+            <td>Mainali</td>
+            <td>shyam@yahoo.com</td>
+        </tr>
+        <tr>
+            <td>Sunil</td>
+            <td>Gurung</td>
+            <td>sunil@gmail.com</td>
+        </tr>
+
+    </table>
+
+
+
+    <hr>
+
+    <!-- with <thead> and <tbody> -->
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Name</th>
+                <th rowspan="2">Email</th>
+            </tr>
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Shyam</td>
+                <td>Mainali</td>
+                <td>shyam@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>Sunil</td>
+                <td>Gurung</td>
+                <td>sunil@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <hr>
+
+    <!-- row of <thead> is not spanning to <tbody> -->
+        <!-- rowspan not working -->
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Name</th>
+                <th rowspan="2">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>First</td>
+                <td>Last</td>
+            </tr>
+            <tr>
+                <td>Shyam</td>
+                <td>Mainali</td>
+                <td>shyam@yahoo.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

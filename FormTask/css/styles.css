@@ -1,0 +1,16 @@
+form{
+    padding: 10px;;
+}
+
+input , select{
+    margin:10px;
+}
+
+#alertmsg{
+font-size: 12px;
+}
+
+a{
+    color:rgb(56, 88, 152);
+    text-decoration: none;
+}
