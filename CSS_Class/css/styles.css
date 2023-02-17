@@ -1,0 +1,36 @@
+li {
+    list-style: none;
+    margin: 5px;
+    display: inline;
+
+}
+
+#home {
+    margin-left: 0;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.active {
+    font-weight: bold;
+    color: brown;
+}
+
+/* .inprocess {
+    
+} */
+
+.disabled{
+    pointer-events: none;
+    color: gray;
+    cursor: no-drop;
+}

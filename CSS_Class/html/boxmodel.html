@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModel</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .parent {
+            height: 600px;
+            width: 600px;
+            border: 1px solid black;
+        }
+
+        .child {
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            margin: -2px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Box Model</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li id="home"><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./blogs.html" class="inprocess disabled">Blogs</li>
+                <li><a href="./boxmodel.html" class="active">Box Model</a></li>
+
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <div class="parent">
+            <div class="child">child1</div>
+            <div class="child">child2</div>
+            <div class="child">child3</div>
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>
