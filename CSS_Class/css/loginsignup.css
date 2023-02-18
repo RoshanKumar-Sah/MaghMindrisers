@@ -1,0 +1,41 @@
+
+.FormContainer{
+    width: 200px;
+    margin: auto;
+    border: 1px dashed black;
+    padding: 10px;
+}
+
+.FormElement{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.LoginForm , .SignUpForm{
+   align-items: center;
+}
+
+.LoginButton{
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin-left: 35px;
+    background-color: rgb(72, 72, 222);
+    color: aliceblue;
+    border-color: rgb(72, 72, 222);
+}
+
+.message{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 5px 0px 0 20px;
+}
+
+.SignUpButton{
+    margin-left: 35px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(72, 72, 222);
+    color: aliceblue;
+    border-color: rgb(72, 72, 222);
+}

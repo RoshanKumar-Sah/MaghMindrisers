@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/loginsignup.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li id="home"><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./blogs.html" class="inprocess disabled">Blogs</a></li>
+                <li><a href="./boxmodel.html">Box Model</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./signup.html" class="active">SignUp</a></li>
+
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <div class="FormContainer">
+        <form class="SignUpForm">
+            <div>
+                <input class="FormElement" type="email" placeholder="Enter your valid email" name="email" />
+            </div>
+            <div>
+                <input class="FormElement" type="password" placeholder="Password" name="password" />
+            </div>
+            <div>
+                <input class="FormElement" type="password" placeholder="Confirm Password" name="confirmpassword" />
+            </div>
+            <div>
+                <button class="SignUpButton" type="submit" value="SignUp">Create an Account</button>
+                <p class="message">Already have account? <a href="./login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+    </main>
+
+</body>
+</html>

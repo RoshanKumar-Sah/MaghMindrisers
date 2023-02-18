@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
+    <title>Login</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/loginsignup.css">
 </head>
 
 <body>
     <header>
-        <h1>Blogs</h1>
+        <h1>Login</h1>
         <hr>
         <nav>
             <ul>
@@ -21,13 +22,30 @@
                 <li><a href="./faq.html">FAQ</a></li>
                 <li><a href="./blogs.html" class="inprocess disabled">Blogs</a></li>
                 <li><a href="./boxmodel.html">Box Model</a></li>
-                <li><a href="./login.html">Login</a></li>
+                <li><a href="./login.html" class="active">Login</a></li>
                 <li><a href="./signup.html">SignUp</a></li>
 
             </ul>
         </nav>
         <hr>
     </header>
+    <main>
+        <div class="FormContainer">
+        <form class="LoginForm">
+            <div>
+                <input class="FormElement" type="email" placeholder="Enter your registered email" name="email" />
+            </div>
+            <div>
+                <input class="FormElement" type="password" placeholder="Password" name="password" />
+            </div>
+            <div>
+                <button class="LoginButton" type="submit" value="Login">Login</button>
+                <p class="message">Do not have account? <a href="./signup.html">Signup</a></p>
+            </div>
+        </form>
+    </div>
+    </main>
+
 </body>
 
 </html>
