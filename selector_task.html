@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,36 +8,42 @@
     <title>Form</title>
 
     <style>
+        /* Tag Selector */
 
-        div{
+        div {
             margin-bottom: 10px;
         }
+
+        /* Attribute Selector */
 
         /* [required]{
             border-color: red;
         } */
 
-        .asterick{
+
+        /* Class Selector */
+        .asterick {
             color: red;
         }
-
     </style>
 
 </head>
+
 <body>
     <main>
         <form>
             <div>
                 <label>First Name: <span class="asterick">*</span></label>
-            <input type="text" name="firstname" required />
-            <label>Second Name:</label>
-            <input type="text" name="secondname" />
-        </div>
-        <div>
-            <label>Email: <span class="asterick">*</span></label>
-            <input type="email" name="email" required />
-        </div>
+                <input type="text" name="firstname" required />
+                <label>Second Name:</label>
+                <input type="text" name="secondname" />
+            </div>
+            <div>
+                <label>Email: <span class="asterick">*</span></label>
+                <input type="email" name="email" required />
+            </div>
         </form>
     </main>
 </body>
+
 </html>
