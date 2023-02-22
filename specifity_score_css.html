@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+
+        /* 
+            specificity score
+
+            000
+            id class tag
+        
+        */
+
+        /* 100  */
+        #first {
+            background-color: white;
+        }
+
+        /* 010 */
+        .child {
+            background-color: gray;
+        }
+
+        /* 001 */
+        div {
+            background-color: orange;
+        }
+
+        /* 111 */
+        #box div.child{
+            background-color: green;
+        }
+
+/* 112 */
+body #box div.child{
+    background-color: aquamarine;
+}
+
+/* 122 */
+ div.box#box div.child{
+    background-color: bisque;
+}
+
+/* 123 */
+body div.box#box div.child{
+    background-color:black;
+}
+
+
+        
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box" id="box">
+        <div class="child " id="first"></div>
+        <div class="child " id="second"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+
+</body>
+
+</html>

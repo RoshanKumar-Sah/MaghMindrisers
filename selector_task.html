@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+
+        div{
+            margin-bottom: 10px;
+        }
+
+        /* [required]{
+            border-color: red;
+        } */
+
+        .asterick{
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <form>
+            <div>
+                <label>First Name: <span class="asterick">*</span></label>
+            <input type="text" name="firstname" required />
+            <label>Second Name:</label>
+            <input type="text" name="secondname" />
+        </div>
+        <div>
+            <label>Email: <span class="asterick">*</span></label>
+            <input type="email" name="email" required />
+        </div>
+        </form>
+    </main>
+</body>
+</html>
