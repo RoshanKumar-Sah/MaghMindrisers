@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h2>Tell us something positve that happened to you today.</h2>
+    </header>
+    <main>
+        <form>
+            <div class="container">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Enter your name" />
+            </div>
+            <div class="container">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Enter your email address" />
+            </div>
+            <div class="container">
+            <label>On a scale of 1-10, how good was it?</label>
+            <input type="number" name="" placeholder="Enter a number between 1 and 10" min="1" max="10" />
+        </div>
+        <div class="container place">
+            <label>Where did it happen?</label>
+            <select name="place-option">
+                <option value="At home">At home</option>
+                <option value="At office">At office</option>  
+            </select>
+        </div>
+        <div class="time container">
+            <label>At what time did it happen?</label>
+            <div class="time-container">
+            <div class="radio-wrapper">
+            <input type="radio" name="time">Morning</input>
+        </div>
+            <div class="radio-wrapper">
+            <input type="radio" name="time">Evening</input>
+        </div>
+        <div class="radio-wrapper">
+            <input type="radio" name="time">Afternoon</input>
+        </div>
+    </div>
+        </div>
+        <div class="emotions container">
+            <label>What emotions did you experience?<span>(Select all that apply)</span></label>
+            <div class="checkbox-container">
+            <div class="checkbox-wrapper">
+            <input type="checkbox" name="excited">Excited</input>
+        </div>
+        <div class="checkbox-wrapper">
+            <input type="checkbox" name="humbled">Humbled</input>
+        </div>
+        <div class="checkbox-wrapper">
+            <input type="checkbox" name="elated">Elated</input>
+        </div>
+        <div class="checkbox-wrapper">
+            <input type="checkbox" name="loved">Loved</input>
+            </div>
+            <div class="checkbox-wrapper">
+            <input type="checkbox" name="enthusiastic">Enthusiastic</input>
+            </div>
+        </div>
+        </div>
+        <div class="describe">
+            <div class="label-container"></div>
+            <label>Please describe your positive experience.</label>
+            <div class="textarea-container">
+            <textarea name="descriptionExp" id="" cols="30" rows="4" placeholder="Enter your experience here..."></textarea>
+        </div>
+        </div>
+        <div class="button-container">
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+
+    </main>
+</body>
+
+</html>

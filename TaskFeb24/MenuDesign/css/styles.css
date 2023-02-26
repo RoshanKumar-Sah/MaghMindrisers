@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-container{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+.image-container img{
+    height:100%;
+    width:100%;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+.menu-card{
+    
+    background-color: burlywood;
+    opacity: 100%;
+    width: fit-content;
+    font-family: Impact, serif;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+h1{
+    margin:1rem 6rem 1rem 6rem;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 0.8rem;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+hr{
+    background-color: brown;
+    height: 0.2rem;
+    margin: 1rem 1rem 1rem 1rem;
+    border: 1px solid black;
+}
+
+h2{
+    font-size: 30px;
+    /* text-align: center; */
+}
+
+.product-container .product-heading , .product-container .product-img-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.product-list .product-item{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 1rem 0.2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-list:last-of-type{
+    margin-bottom: 2rem;
+}
+
+.hrfoot{
+    margin-bottom: 0.5rem;
+}
+
+.footer{
+    margin-bottom: 2rem;
+}
+
+.footer a{
+    font-size: 0.7rem;
+    color: black;
+    font-style: normal;
+}
