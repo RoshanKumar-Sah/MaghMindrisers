@@ -4,16 +4,20 @@
     box-sizing: border-box;
 }
 
-.image-container{
+body{
+    background-image: url(../assets/images/beans.jpg);
+}
+
+/* .image-container{
     height: 100vh;
     width: 100%;
     position: absolute;
-}
+} */
 
-.image-container img{
+/* .image-container img{
     height:100%;
     width:100%;
-}
+} */
 
 .menu-container{
     display: flex;
