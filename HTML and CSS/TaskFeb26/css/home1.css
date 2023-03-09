@@ -694,7 +694,7 @@ footer {
 
 .social-media {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin: 30px 0;
 }
 
@@ -706,6 +706,8 @@ footer {
     border: 1px solid var(--white);
     width: fit-content;
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
 
 }
 
