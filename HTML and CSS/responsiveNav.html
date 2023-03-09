@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+            justify-content: start;
+            flex-direction: column;
+            gap: 20px;
+            position: fixed;
+            background-color: aqua;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            padding: 15px;
+            width: 30vw;
+        }
+
+
+        .closeicon {
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 80px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .navigation,
+        .closeicon,
+        header ul {
+            transform: translateX(150%);
+        }
+
+        .navigation.active,
+        .closeicon.active,
+        header ul.active {
+            transform: translateX(0%);
+        }
+
+
+        li:first-child {
+            margin-top: 80px;
+        }
+
+        @media (min-width:576px) {
+
+            header nav .menu,
+            .closeicon {
+                display: none;
+            }
+
+            header ul {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                transform: translateX(-150%);
+            }
+
+            li:first-child {
+                margin-top: 0;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-around;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="./TaskFeb26/images/Logo.png" alt="logo" /></div>
+            <div class="menu-container">
+
+                <div class="menu" id="menu"><img src="./menu.svg" alt="menu" /></div>
+                <div class="navigation" id="navigation">
+                    <img class="closeicon" id="closeicon" src="./close.svg" alt="close" />
+                    <ul id="list">
+                        <li>Home</li>
+                        <li>Pricing</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+document.getElementById("menu").addEventListener("click", () => {
+document.getElementById("navigation").classList.add("active")
+document.getElementById("closeicon").classList.add("active")
+document.getElementById("list").classList.add("active")
+})
+
+document.getElementById("closeicon").addEventListener("click", () => {
+    document.getElementById("navigation").classList.remove("active")
+    document.getElementById("closeicon").classList.remove("active")
+document.getElementById("list").classList.remove("active")
+
+})
+    </script>
+
+</body>
+
+</html>
