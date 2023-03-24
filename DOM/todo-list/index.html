@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+</head>
+
+<body>
+    <h1>Todo List</h1>
+    <hr>
+    <form onsubmit="addnewtodo(event)">
+        <input id="taskName" name="task_name" type="text" placeholder="Enter Task" />
+        <button>Add</button>
+    </form>
+    <hr>
+    <ul id="todo-lists"></ul>
+
+
+    <script>
+        // let addnewtodo = (event) => {
+        //     event.preventDefault();
+            
+        //     let newList = document.createElement("li")
+        //     let taskName = document.getElementById("taskName").value
+        //     newList.innerHTML = taskName
+        //     document.getElementById("todo-lists").appendChild(newList)
+        //     document.getElementById("taskName").value = ""
+        // }
+
+        let addnewtodo = (event) => {
+            event.preventDefault();
+
+            
+            if(event.target.task_name.value != ""){
+                
+            let newList = document.createElement("li")
+            let taskName = event.target.task_name.value
+            // newList.innerText = taskName
+            
+            document.getElementById("todo-lists").innerHTML += `<li>${taskName}  <button>Remove</button></li> </br>`
+           
+            
+
+            event.target.task_name.value = ""
+
+            
+        }
+        }
+    </script>
+</body>
+
+</html>

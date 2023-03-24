@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid blue;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <h1>Shopping List</h1>
+    <hr>
+    <form onsubmit="addShoppingItem(event)">
+        <input name="product_name" type="text" placeholder="Product Name">
+        <input name="quantity_input" type="number" placeholder="Quantity">
+        <button type="submit">Add</button>
+    </form>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+        <tfoot>
+            
+        </tfoot>
+    </table>
+</body>
+
+</html>
